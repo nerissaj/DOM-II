@@ -31,6 +31,11 @@ function step(timestamp) {
 }
 
 window.requestAnimationFrame(step);
+const moveBoxRight = document.querySelector('.blocks');
+ moveBoxRight.addEventListener('mousedown', event => 
+                             setInterval(function() {
+    moveBoxRight.style.transform = "translateX(1600px)";
+  }, 200));
 
 //var start = null;
 //var element = document.querySelector('.block--blue'); 
